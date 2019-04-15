@@ -24,3 +24,26 @@ module.exports = function(app) {
 })};
 
 
+
+
+
+
+
+// Ran out of time with this attempt
+//     var totalDifference = [];
+
+
+//     function findMatch() {
+//       friendsArr.scores.forEach(function() {
+//         totalDifference.push(Math.abs(friendsArr.scores - userSurveyScore));
+//         var minDiff = totalDifference.min = function(totalDifference) {
+//           return Math.min.apply(Math, totalDifference);
+//         };
+
+//         var matchedFriend= '';
+//         minDiff 
+
+
+//       });
+//     }
+//   })}});

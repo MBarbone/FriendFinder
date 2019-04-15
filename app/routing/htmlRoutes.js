@@ -3,7 +3,7 @@ var path = require('path');
 
 // GET paths to handle routing when user visits page
 module.exports = function (app){
-    app.get('/s', function(req,res){
+    app.get('/', function(req,res){
         res.sendFile(path.join('/app/public/home.html'));
     });
 
@@ -16,5 +16,3 @@ module.exports = function (app){
         res.sendFile(path.join('/app/public/home.html'));
     });
 };
-
-
