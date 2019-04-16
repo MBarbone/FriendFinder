@@ -1,29 +1,64 @@
-var path = require("path");
+var path = require('path');
 
-var friends = require("../data/friends.js");
+var friends = require("../data/friends");
+
 
 module.exports = function(app) {
-  // retrieve friends entries
-  app.get("/api/friends", function(res, req) {
+
+
+  app.get("/api/friends", function(req, res) {
     res.json(friends);
   });
 
-  // add (post) new friend
-  app.post("/api/friends", function(res, req) {
-    // user input
-    var userInput = req.body;
 
-    // user score
-    var userSurveyScore = userInput.score;
+  app.post("/api/friends", function(req, res) {
+    
+    var friendMatch = {
+      name: "",
+      photo: "",
+
+      
+      // large for comparison
+      friendDifference: 100000,
+    };
+
+  
+    var userData = req.body;
+    var userScores = userData.scores;
+
 
     
-    var closestMatch = friendsArr.forEach(friendsArr.scores.reduce(function (prev, curr) {
+    for (var i = 0; i < friends.length; i++) {
+      var currentFriend = friends[i];
+      totalDifference = 0;
 
+      console.log(currentFriend.name);
+
+      
+      for (var j = 0; j < currentFriend.scores.length; j++) {
+        var currentFriendScore = currentFriend.scores[j];
+        var currentUserScore = userScores[j];
+
+       
+        totalDifference += Math.abs(parseInt(currentUserScore) - parseInt(currentFriendScore));
+      }
+
+     
+      if (totalDifference <= friendMatch.friendDifference) {
         
-       return Math.abs(curr - userSurveyScore) < Math.abs(prev - userSurveydid you Score) ? curr : prev}));
-})};
+        friendMatch.name = currentFriend.name;
+        friendMatch.photo = currentFriend.photo;
+        friendMatch.friendDifference = totalDifference;
+      }
+    }
 
+    
+    friends.push(userData);
 
+    
+    res.json(friendMatch);
+  });
+};
 
 
 

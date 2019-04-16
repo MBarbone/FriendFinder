@@ -1,4 +1,4 @@
-var friendsArr = [{
+var friends = [{
     name:"Bugs Bunny",
     photo:"https://vignette.wikia.nocookie.net/looneytunes/images/2/26/Classic_bugsbunny.png/revision/latest?cb=20160417193815",
     scores:[
@@ -91,4 +91,4 @@ var friendsArr = [{
   }];
 
 
-  module.exports = friendsArr;
+  module.exports = friends;

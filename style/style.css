@@ -7,11 +7,17 @@
 }
 
 .btn-primary{
-    margin: 5px 0;
+    margin: 10px 0 5px 0; 
+}
+
+.fa-list-alt{
+    padding: 5px;
+    margin: 5px;
 }
 
 #friendMatch-img{
-    width: 350px;
+    width: 250px;
+    text-align: center;
 }
 
 body{
