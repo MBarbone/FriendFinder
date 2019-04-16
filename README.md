@@ -7,12 +7,12 @@ Friend Finder is an app designed to help match you with your most compatible fri
 Friend Finder is deployed to Heroku. Please check it out here.
 
 ### Home Page
-https://github.com/MBarbone/FriendFinder/blob/master/readMe_demo_photos/home_ff.png
+![friendFinder home](https://github.com/MBarbone/FriendFinder/blob/master/readMe_demo_photos/home_ff.png)
 
 
 ### Survey
-https://github.com/MBarbone/FriendFinder/blob/master/readMe_demo_photos/survy_ff.png
+![friendFinder survey]https://github.com/MBarbone/FriendFinder/blob/master/readMe_demo_photos/survy_ff.png
 
 ### Friend Match
-https://github.com/MBarbone/FriendFinder/blob/master/readMe_demo_photos/friendMatch_ff.png
+![friendFinder friend match]https://github.com/MBarbone/FriendFinder/blob/master/readMe_demo_photos/friendMatch_ff.png
 
