@@ -11,7 +11,7 @@ Friend Finder is deployed to Heroku. Please check it out here.
 
 
 ### Survey
-![friendFinder survey](https://github.com/MBarbone/FriendFinder/blob/master/readMe_demo_photos/survy_ff.png)
+![friendFinder survey](https://github.com/MBarbone/FriendFinder/blob/master/readMe_demo_photos/survey_ff.png)
 
 ### Friend Match
 ![friendFinder friend match](https://github.com/MBarbone/FriendFinder/blob/master/readMe_demo_photos/friendMatch_ff.png)
